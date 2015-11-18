@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace GamePatcher_Base
 {
-    static class Program
+    static class Base
     {
         /// <summary>
         /// The main entry point for the application.

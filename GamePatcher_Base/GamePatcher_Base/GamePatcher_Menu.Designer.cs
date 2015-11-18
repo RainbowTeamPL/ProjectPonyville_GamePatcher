@@ -30,12 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // GamePatcher_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "GamePatcher_Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game Patcher";
             this.ResumeLayout(false);
 
