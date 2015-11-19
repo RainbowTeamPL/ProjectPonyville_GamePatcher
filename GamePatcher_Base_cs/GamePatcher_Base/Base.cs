@@ -16,7 +16,7 @@ namespace GamePatcher_Base
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GamePatcher_Menu());
+            Application.Run(new GamePatcher_Splash());
         }
     }
 }

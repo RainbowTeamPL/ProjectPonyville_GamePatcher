@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.Devices;
 
 namespace GamePatcher_Base
 {
-    public partial class GamePatcher_Menu : Form
+    public partial class GamePatcher_Splash : Form
     {
-        public GamePatcher_Menu()
+        public GamePatcher_Splash()
         {
             InitializeComponent();
+            Network.DownloadFile();
         }
     }
 }

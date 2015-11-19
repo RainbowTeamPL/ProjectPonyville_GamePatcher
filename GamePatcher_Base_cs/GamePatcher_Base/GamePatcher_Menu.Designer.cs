@@ -1,6 +1,6 @@
 ﻿namespace GamePatcher_Base
 {
-    partial class GamePatcher_Menu
+    partial class GamePatcher_Splash
     {
         /// <summary>
         /// Required designer variable.
