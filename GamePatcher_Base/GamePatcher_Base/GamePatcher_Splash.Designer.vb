@@ -24,6 +24,7 @@ Partial Class GamePatcher_Splash
     Private Sub InitializeComponent()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.VersionLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -36,6 +37,7 @@ Partial Class GamePatcher_Splash
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
+        Me.PictureBox1.UseWaitCursor = True
         '
         'ProgressBar1
         '
@@ -43,6 +45,15 @@ Partial Class GamePatcher_Splash
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(500, 23)
         Me.ProgressBar1.TabIndex = 1
+        Me.ProgressBar1.UseWaitCursor = True
+        '
+        'VersionLabel
+        '
+        Me.VersionLabel.AutoSize = True
+        Me.VersionLabel.Location = New System.Drawing.Point(483, 312)
+        Me.VersionLabel.Name = "VersionLabel"
+        Me.VersionLabel.Size = New System.Drawing.Size(0, 13)
+        Me.VersionLabel.TabIndex = 2
         '
         'GamePatcher_Splash
         '
@@ -50,6 +61,7 @@ Partial Class GamePatcher_Splash
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(534, 334)
         Me.ControlBox = False
+        Me.Controls.Add(Me.VersionLabel)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.PictureBox1)
         Me.MaximizeBox = False
@@ -61,9 +73,11 @@ Partial Class GamePatcher_Splash
         Me.UseWaitCursor = True
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents VersionLabel As Label
 End Class

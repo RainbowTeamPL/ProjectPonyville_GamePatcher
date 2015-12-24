@@ -72,6 +72,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="GamePatcher_Main.Designer.vb">
       <DependentUpon>GamePatcher_Main.vb</DependentUpon>
     </Compile>
@@ -106,6 +107,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+    <Compile Include="Workaround1.Designer.vb">
+      <DependentUpon>Workaround1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Workaround1.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="GamePatcher_Main.resx">
@@ -124,6 +131,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workaround1.resx">
+      <DependentUpon>Workaround1.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
