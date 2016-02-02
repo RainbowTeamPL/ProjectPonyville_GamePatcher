@@ -18,4 +18,11 @@ Public Class GamePatcher_Main
         My.Forms.Workaround1.MainClosed = True
     End Sub
 
+    Private Sub MinimizeButton_Click(sender As Object, e As EventArgs) Handles MinimizeButton.Click
+        Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
+    End Sub
+
+    Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
+        Close()
+    End Sub
 End Class

@@ -18,14 +18,7 @@ Public Class Workaround1
     End Sub
 
     Public Sub SetConnectionStatus(ByVal bool As Boolean)
-        My.Forms.GamePatcher_Main.NetworkStatus.ReadOnly = False
-        If bool = True Then
 
-            My.Forms.GamePatcher_Main.NetworkStatus.Text = "EYUP"
-        Else
-            My.Forms.GamePatcher_Main.NetworkStatus.Text = "NOPE"
-        End If
-        My.Forms.GamePatcher_Main.NetworkStatus.ReadOnly = True
     End Sub
 
     Private Sub TimerCheckSplash_Tick(sender As Object, e As EventArgs) Handles TimerCheckSplash.Tick
