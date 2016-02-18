@@ -54,6 +54,7 @@ Partial Class GamePatcher_Splash
         Me.VersionLabel.Name = "VersionLabel"
         Me.VersionLabel.Size = New System.Drawing.Size(0, 13)
         Me.VersionLabel.TabIndex = 2
+        Me.VersionLabel.UseWaitCursor = True
         '
         'GamePatcher_Splash
         '
@@ -64,6 +65,7 @@ Partial Class GamePatcher_Splash
         Me.Controls.Add(Me.VersionLabel)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "GamePatcher_Splash"

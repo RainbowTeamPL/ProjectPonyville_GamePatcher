@@ -3,6 +3,7 @@
 Public Class GamePatcher_Main
     Private Sub GamePatcher_Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GamePatcher_Splash.Close()
+        VersionLabel.Text = GlobalVariables.TMPVersionInt
     End Sub
 
     Public Event NetworkAvailabilityChanged As NetworkAvailableEventHandler
@@ -24,5 +25,10 @@ Public Class GamePatcher_Main
 
     Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
         Close()
+    End Sub
+
+    Private Sub InsertCDKeyMenu_Click(sender As Object, e As EventArgs) Handles InsertCDKeyMenu.Click
+        CDKeyForm.Show()
+        CDKeyForm.RegistryRead()
     End Sub
 End Class

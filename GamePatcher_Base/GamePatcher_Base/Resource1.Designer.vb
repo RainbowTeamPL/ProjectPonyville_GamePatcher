@@ -25,7 +25,7 @@ Namespace My.Resources
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
-    Friend Class Resource1
+    Public Class Resource1
         
         Private Shared resourceMan As Global.System.Resources.ResourceManager
         
@@ -40,7 +40,7 @@ Namespace My.Resources
         '''  Returns the cached ResourceManager instance used by this class.
         '''</summary>
         <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
+        Public Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
                     Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("GamePatcher_Base.Resource1", GetType(Resource1).Assembly)
@@ -55,7 +55,7 @@ Namespace My.Resources
         '''  resource lookups using this strongly typed resource class.
         '''</summary>
         <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Friend Shared Property Culture() As Global.System.Globalization.CultureInfo
+        Public Shared Property Culture() As Global.System.Globalization.CultureInfo
             Get
                 Return resourceCulture
             End Get
@@ -67,7 +67,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend Shared ReadOnly Property Splash() As System.Drawing.Bitmap
+        Public Shared ReadOnly Property Splash() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Splash", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
@@ -77,7 +77,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to http://cdn.rainbowteam.pl:3414/test/version.v.
         '''</summary>
-        Friend Shared ReadOnly Property VersionURL() As String
+        Public Shared ReadOnly Property VersionURL() As String
             Get
                 Return ResourceManager.GetString("VersionURL", resourceCulture)
             End Get
