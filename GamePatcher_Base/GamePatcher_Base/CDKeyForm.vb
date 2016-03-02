@@ -1,4 +1,6 @@
-﻿Public Class CDKeyForm
+﻿Imports System.Net
+
+Public Class CDKeyForm
 
 
     Public Sub RegistryRead()
@@ -18,6 +20,7 @@
     Private Sub VerifyBtn_Click(sender As Object, e As EventArgs) Handles VerifyBtn.Click
         If VerifyCode(CDKeyTextBox.Text) = True Then
             My.Computer.Registry.SetValue("HKEY_CURRENT_USER\Software\RainbowTeamPL\ProjectPonyville", "cdkey", CDKeyTextBox.Text)
+            WebRequestPost.WebRequestPost.Main()
             Me.Close()
         Else
             MessageBox.Show("Invalid CD-Key!")

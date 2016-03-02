@@ -1,0 +1,4 @@
+AuthName "Podaj haslo"
+AuthType Basic
+AuthUserFile C:\GitHub\ProjectPonyville_GamePatcher\webServer\test\private\.htpasswd
+Require valid-user
