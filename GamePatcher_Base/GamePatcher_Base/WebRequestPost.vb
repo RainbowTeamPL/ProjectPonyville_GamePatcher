@@ -7,8 +7,8 @@ Namespace WebRequestPost
 
         Public Shared Sub Main()
             ' Create a request using a URL that can receive a post. 
-            Dim request As WebRequest = WebRequest.Create("http://rainbowteam.pl:3414/test/analytics.php")
-            'Dim request As WebRequest = WebRequest.Create("http://e.grappl.io:578/test/analytics.php")
+            'Dim request As WebRequest = WebRequest.Create("http://rainbowteam.pl:3414/test/analytics.php")
+            Dim request As WebRequest = WebRequest.Create("http://s.grappl.io:3690/test/analytics.php")
             ' Set the Method property of the request to POST.
             request.Method = "POST"
             ' Create POST data and convert it to a byte array.

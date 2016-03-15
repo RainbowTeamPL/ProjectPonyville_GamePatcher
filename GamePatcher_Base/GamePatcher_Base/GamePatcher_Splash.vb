@@ -5,6 +5,10 @@ Public Class GamePatcher_Splash
         If My.Computer.FileSystem.FileExists(Application.StartupPath & "\temp\version.v") Then
             My.Computer.FileSystem.DeleteFile(Application.StartupPath & "\temp\version.v")
         End If
+        If My.Computer.FileSystem.FileExists(Application.StartupPath & "7za.exe") Then
+        Else
+            My.Computer.Network.DownloadFile("", Application.StartupPath & "7za.exe")
+        End If
         My.Computer.Network.DownloadFile(My.Resources.Resource1.VersionURL, Application.StartupPath & "\temp\version.v")
         GlobalVariables.TMPVersion = My.Computer.FileSystem.ReadAllText(Application.StartupPath & "\temp\version.v")
         GlobalVariables.TMPVersionInt = Convert.ToDecimal(GlobalVariables.TMPVersion)

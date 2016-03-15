@@ -71,6 +71,7 @@ Partial Class GamePatcher_Main
         '
         'InsertCDKeyMenu
         '
+        Me.InsertCDKeyMenu.Enabled = False
         Me.InsertCDKeyMenu.Name = "InsertCDKeyMenu"
         Me.InsertCDKeyMenu.Size = New System.Drawing.Size(155, 22)
         Me.InsertCDKeyMenu.Text = "Insert CD-Key..."
