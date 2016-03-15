@@ -75,7 +75,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to http://cdn.rainbowteam.pl:3414/test/version.v.
+        '''  Looks up a localized string similar to https://github.com/RainbowTeamPL/ProjectPonyville_GamePatcher/raw/master/GamePatcher_Base/GamePatcher_Base/version.v.
         '''</summary>
         Public Shared ReadOnly Property VersionURL() As String
             Get

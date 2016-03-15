@@ -122,6 +122,6 @@
     <value>Resources\Splash.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VersionURL" xml:space="preserve">
-    <value>http://cdn.rainbowteam.pl:3414/test/version.v</value>
+    <value>https://github.com/RainbowTeamPL/ProjectPonyville_GamePatcher/raw/master/GamePatcher_Base/GamePatcher_Base/version.v</value>
   </data>
 </root>

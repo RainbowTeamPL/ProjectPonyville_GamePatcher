@@ -7,7 +7,9 @@ Public Class GamePatcher_Splash
         End If
         If My.Computer.FileSystem.FileExists(Application.StartupPath & "7za.exe") Then
         Else
-            My.Computer.Network.DownloadFile("", Application.StartupPath & "7za.exe")
+            My.Computer.Network.DownloadFile("https://github.com/RainbowTeamPL/ProjectPonyville_GamePatcher/raw/master/GamePatcher_Base/GamePatcher_Base/7z/7za.exe", Application.StartupPath & "7za.exe")
+            My.Computer.Network.DownloadFile("https://github.com/RainbowTeamPL/ProjectPonyville_GamePatcher/raw/master/GamePatcher_Base/GamePatcher_Base/7z/7za.dll", Application.StartupPath & "7za.dll")
+            My.Computer.Network.DownloadFile("https://github.com/RainbowTeamPL/ProjectPonyville_GamePatcher/raw/master/GamePatcher_Base/GamePatcher_Base/7z/7zxa.dll", Application.StartupPath & "7zxa.dll")
         End If
         My.Computer.Network.DownloadFile(My.Resources.Resource1.VersionURL, Application.StartupPath & "\temp\version.v")
         GlobalVariables.TMPVersion = My.Computer.FileSystem.ReadAllText(Application.StartupPath & "\temp\version.v")
