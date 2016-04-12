@@ -5,8 +5,8 @@ Public Class InstallGameForm
         Dim client As WebClient = New WebClient
         AddHandler client.DownloadProgressChanged, AddressOf client_ProgressChanged
         AddHandler client.DownloadFileCompleted, AddressOf client_DownloadCompleted
-        'client.DownloadFileAsync(New Uri("https://github.com/RainbowTeamPL/ProjectPonyville/releases/download/0.0.1-pa/0.0.1-pa.7z"), Application.StartupPath & "\temp\download.7z")
-        client.DownloadFileAsync(New Uri("http://127.0.0.1/slowdown/0.0.1-pa.7z"), Application.StartupPath & "\temp\download.7z")
+        client.DownloadFileAsync(New Uri("https://github.com/RainbowTeamPL/ProjectPonyville/releases/download/" & GlobalVariables.TMPVersion & "/" & GlobalVariables.TMPVersion & ".7z"), Application.StartupPath & "\temp\download.7z")
+        'client.DownloadFileAsync(New Uri("http://127.0.0.1/slowdown/" & GlobalVariables.TMPVersion & .7z"), Application.StartupPath & "\temp\download.7z")
 
         'btnStartDownload.Text = "Download in Progress"
         'btnStartDownload.Enabled = False

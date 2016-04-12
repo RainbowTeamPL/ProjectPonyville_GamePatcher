@@ -5,11 +5,12 @@ Public Class GamePatcher_Splash
         If My.Computer.FileSystem.FileExists(Application.StartupPath & "\temp\version.v") Then
             My.Computer.FileSystem.DeleteFile(Application.StartupPath & "\temp\version.v")
         End If
-        If My.Computer.FileSystem.FileExists(Application.StartupPath & "7za.exe") Then
+        If My.Computer.FileSystem.FileExists(Application.StartupPath & "\7z\7za.exe") Then
         Else
-            My.Computer.Network.DownloadFile("https://github.com/RainbowTeamPL/ProjectPonyville_GamePatcher/raw/master/GamePatcher_Base/GamePatcher_Base/7z/7za.exe", Application.StartupPath & "7za.exe")
-            My.Computer.Network.DownloadFile("https://github.com/RainbowTeamPL/ProjectPonyville_GamePatcher/raw/master/GamePatcher_Base/GamePatcher_Base/7z/7za.dll", Application.StartupPath & "7za.dll")
-            My.Computer.Network.DownloadFile("https://github.com/RainbowTeamPL/ProjectPonyville_GamePatcher/raw/master/GamePatcher_Base/GamePatcher_Base/7z/7zxa.dll", Application.StartupPath & "7zxa.dll")
+            My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/RainbowTeamPL/ProjectPonyville_GamePatcher/master/GamePatcher_Base/GamePatcher_Base/7z/7za.exe", Application.StartupPath & "\7z\7za.exe")
+            My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/RainbowTeamPL/ProjectPonyville_GamePatcher/master/GamePatcher_Base/GamePatcher_Base/7z/7za.dll", Application.StartupPath & "\7z\7za.dll")
+            My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/RainbowTeamPL/ProjectPonyville_GamePatcher/master/GamePatcher_Base/GamePatcher_Base/7z/7zxa.dll", Application.StartupPath & "\7z\7zxa.dll")
+            My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/RainbowTeamPL/ProjectPonyville_GamePatcher/master/GamePatcher_Base/GamePatcher_Base/7z/7za.cmd", Application.StartupPath & "\7z\7za.cmd")
         End If
         My.Computer.Network.DownloadFile(My.Resources.Resource1.VersionURL, Application.StartupPath & "\temp\version.v")
         GlobalVariables.TMPVersion = My.Computer.FileSystem.ReadAllText(Application.StartupPath & "\temp\version.v")
