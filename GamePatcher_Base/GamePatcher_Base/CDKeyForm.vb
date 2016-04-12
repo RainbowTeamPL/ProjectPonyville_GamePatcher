@@ -2,7 +2,6 @@
 
 Public Class CDKeyForm
 
-
     Public Sub RegistryRead()
         CDKeyTextBox.Text = My.Computer.Registry.GetValue("HKEY_CURRENT_USER\Software\RainbowTeamPL\ProjectPonyville", "cdkey", "")
     End Sub
@@ -51,7 +50,6 @@ Public Class CDKeyForm
         '
 
         Dim lst As New List(Of List(Of String))
-
 
         ' ################################################################
         ' #  VERY VERY IMPORTANT!!!!                                     #

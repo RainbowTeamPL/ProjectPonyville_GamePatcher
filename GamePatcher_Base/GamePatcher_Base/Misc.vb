@@ -1,5 +1,4 @@
-﻿
-' Various conversions from one value to another.
+﻿' Various conversions from one value to another.
 ' Hex conversions aren't actually used. =]
 
 Module CConvert

@@ -13,9 +13,9 @@ Public Class GamePatcher_Splash
         End If
         My.Computer.Network.DownloadFile(My.Resources.Resource1.VersionURL, Application.StartupPath & "\temp\version.v")
         GlobalVariables.TMPVersion = My.Computer.FileSystem.ReadAllText(Application.StartupPath & "\temp\version.v")
-        GlobalVariables.TMPVersionInt = Convert.ToDecimal(GlobalVariables.TMPVersion)
+        'GlobalVariables.TMPVersionInt = Convert.ToDecimal(GlobalVariables.TMPVersion)
 
-        VersionLabel.Text = GlobalVariables.TMPVersionInt
+        VersionLabel.Text = GlobalVariables.TMPVersion
         ProgressBar1.Value = 100
         'GamePatcher_Main.Show()
         My.Computer.FileSystem.DeleteFile(Application.StartupPath & "\temp\version.v")

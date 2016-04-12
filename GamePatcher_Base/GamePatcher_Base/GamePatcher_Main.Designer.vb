@@ -27,7 +27,10 @@ Partial Class GamePatcher_Main
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.InsertCDKeyMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UninstallToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VersionLabel = New System.Windows.Forms.Label()
+        Me.InstallBtn = New System.Windows.Forms.Button()
+        Me.PlayBtn = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -64,7 +67,7 @@ Partial Class GamePatcher_Main
         '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertCDKeyMenu})
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertCDKeyMenu, Me.UninstallToolStripMenuItem})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(48, 20)
         Me.ToolStripMenuItem1.Text = "Tools"
@@ -76,6 +79,12 @@ Partial Class GamePatcher_Main
         Me.InsertCDKeyMenu.Size = New System.Drawing.Size(155, 22)
         Me.InsertCDKeyMenu.Text = "Insert CD-Key..."
         '
+        'UninstallToolStripMenuItem
+        '
+        Me.UninstallToolStripMenuItem.Name = "UninstallToolStripMenuItem"
+        Me.UninstallToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.UninstallToolStripMenuItem.Text = "Uninstall..."
+        '
         'VersionLabel
         '
         Me.VersionLabel.AutoSize = True
@@ -85,12 +94,32 @@ Partial Class GamePatcher_Main
         Me.VersionLabel.TabIndex = 4
         Me.VersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'InstallBtn
+        '
+        Me.InstallBtn.Location = New System.Drawing.Point(12, 194)
+        Me.InstallBtn.Name = "InstallBtn"
+        Me.InstallBtn.Size = New System.Drawing.Size(260, 42)
+        Me.InstallBtn.TabIndex = 5
+        Me.InstallBtn.Text = "Install"
+        Me.InstallBtn.UseVisualStyleBackColor = True
+        '
+        'PlayBtn
+        '
+        Me.PlayBtn.Location = New System.Drawing.Point(12, 146)
+        Me.PlayBtn.Name = "PlayBtn"
+        Me.PlayBtn.Size = New System.Drawing.Size(260, 42)
+        Me.PlayBtn.TabIndex = 6
+        Me.PlayBtn.Text = "Play"
+        Me.PlayBtn.UseVisualStyleBackColor = True
+        '
         'GamePatcher_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.ControlBox = False
+        Me.Controls.Add(Me.PlayBtn)
+        Me.Controls.Add(Me.InstallBtn)
         Me.Controls.Add(Me.VersionLabel)
         Me.Controls.Add(Me.MinimizeButton)
         Me.Controls.Add(Me.CloseButton)
@@ -115,4 +144,7 @@ Partial Class GamePatcher_Main
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents InsertCDKeyMenu As ToolStripMenuItem
     Friend WithEvents VersionLabel As Label
+    Friend WithEvents InstallBtn As Button
+    Friend WithEvents PlayBtn As Button
+    Friend WithEvents UninstallToolStripMenuItem As ToolStripMenuItem
 End Class
