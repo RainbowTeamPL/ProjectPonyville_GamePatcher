@@ -31,6 +31,7 @@ Partial Class GamePatcher_Main
         Me.VersionLabel = New System.Windows.Forms.Label()
         Me.InstallBtn = New System.Windows.Forms.Button()
         Me.PlayBtn = New System.Windows.Forms.Button()
+        Me.UpdateText = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -88,7 +89,7 @@ Partial Class GamePatcher_Main
         'VersionLabel
         '
         Me.VersionLabel.AutoSize = True
-        Me.VersionLabel.Location = New System.Drawing.Point(272, 239)
+        Me.VersionLabel.Location = New System.Drawing.Point(235, 239)
         Me.VersionLabel.Name = "VersionLabel"
         Me.VersionLabel.Size = New System.Drawing.Size(0, 13)
         Me.VersionLabel.TabIndex = 4
@@ -112,12 +113,25 @@ Partial Class GamePatcher_Main
         Me.PlayBtn.Text = "Play"
         Me.PlayBtn.UseVisualStyleBackColor = True
         '
+        'UpdateText
+        '
+        Me.UpdateText.AutoSize = True
+        Me.UpdateText.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.UpdateText.ForeColor = System.Drawing.Color.Red
+        Me.UpdateText.Location = New System.Drawing.Point(51, 118)
+        Me.UpdateText.Name = "UpdateText"
+        Me.UpdateText.Size = New System.Drawing.Size(172, 25)
+        Me.UpdateText.TabIndex = 7
+        Me.UpdateText.Text = "Update Avaible"
+        Me.UpdateText.Visible = False
+        '
         'GamePatcher_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.ControlBox = False
+        Me.Controls.Add(Me.UpdateText)
         Me.Controls.Add(Me.PlayBtn)
         Me.Controls.Add(Me.InstallBtn)
         Me.Controls.Add(Me.VersionLabel)
@@ -147,4 +161,5 @@ Partial Class GamePatcher_Main
     Friend WithEvents InstallBtn As Button
     Friend WithEvents PlayBtn As Button
     Friend WithEvents UninstallToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UpdateText As Label
 End Class

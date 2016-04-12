@@ -1,0 +1,52 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GamePatcher_Base
+</name>
+</assembly>
+<members>
+<member name="T:GamePatcher_Base.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:GamePatcher_Base.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:GamePatcher_Base.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:GamePatcher_Base.My.Resources.Resource1">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:GamePatcher_Base.My.Resources.Resource1.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:GamePatcher_Base.My.Resources.Resource1.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:GamePatcher_Base.My.Resources.Resource1.Splash">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:GamePatcher_Base.My.Resources.Resource1.VersionURL">
+<summary>
+  Looks up a localized string similar to https://raw.githubusercontent.com/RainbowTeamPL/ProjectPonyville_GamePatcher/master/GamePatcher_Base/GamePatcher_Base/version.v.
+</summary>
+</member>
+</members>
+</doc>

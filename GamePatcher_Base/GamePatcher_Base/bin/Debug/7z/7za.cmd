@@ -1,0 +1,1 @@
+%~dp07za.exe x %~dp0..\temp\download.7z -o%~dp0..\ProjectPonyville -y

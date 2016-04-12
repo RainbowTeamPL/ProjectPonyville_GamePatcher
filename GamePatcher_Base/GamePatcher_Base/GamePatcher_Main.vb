@@ -61,6 +61,15 @@ Public Class GamePatcher_Main
             'PlayBtn.Enabled = True
 
         End If
+
+        Dim RegistryVersion As String = My.Computer.Registry.GetValue("HKEY_CURRENT_USER\Software\RainbowTeamPL\ProjectPonyville", "Version", 0)
+        If String.Equals(GlobalVariables.TMPVersion, RegistryVersion) Then
+            UpdateText.Visible = False
+        Else
+            UpdateText.Visible = True
+            'MessageBox.Show(RegistryVersion)
+            'MessageBox.Show(GlobalVariables.TMPVersion)
+        End If
     End Sub
 
     Private Sub UninstallToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UninstallToolStripMenuItem.Click
@@ -94,6 +103,6 @@ Public Class GamePatcher_Main
         'Catch
         '    MessageBox.Show("Could not uninstall", "Error")
         'End Try
-
+        My.Computer.Registry.CurrentUser.DeleteSubKey("Software\RainbowTeamPL\ProjectPonyville", False)
     End Sub
 End Class

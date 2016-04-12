@@ -47,6 +47,7 @@ Public Class InstallGameForm
             ProgressBar1.Value = 100%
             CancelBtn.Text = "Close"
             Label1.Text = "Finished"
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\Software\RainbowTeamPL\ProjectPonyville", "Version", GlobalVariables.TMPVersion)
             My.Forms.GamePatcher_Main.Refresh()
             My.Forms.GamePatcher_Main.Reload()
 
