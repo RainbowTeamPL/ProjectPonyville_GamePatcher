@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports Microsoft.VisualBasic.Devices
+Imports IWshRuntimeLibrary
 
 Public Class GamePatcher_Main
     Private Sub GamePatcher_Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -104,5 +105,16 @@ Public Class GamePatcher_Main
         '    MessageBox.Show("Could not uninstall", "Error")
         'End Try
         My.Computer.Registry.CurrentUser.DeleteSubKey("Software\RainbowTeamPL\ProjectPonyville", False)
+    End Sub
+
+    Private Sub CreateDesktopShortcutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreateDesktopShortcutToolStripMenuItem.Click
+        Dim WshShell As WshShellClass = New WshShellClass
+        Dim MyShortcut As IWshRuntimeLibrary.IWshShortcut
+        ' The shortcut will be created on the desktop
+        Dim DesktopFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory)
+        MyShortcut = CType(WshShell.CreateShortcut(DesktopFolder & "\ProjectPonyville Launcher.lnk"), IWshRuntimeLibrary.IWshShortcut)
+        'MyShortcut.TargetPath = Application.StartupPath & "\Launcher.exe" 'Specify target app full path
+        MyShortcut.TargetPath = Application.ExecutablePath
+        MyShortcut.Save()
     End Sub
 End Class

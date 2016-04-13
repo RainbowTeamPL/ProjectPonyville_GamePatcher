@@ -5,6 +5,9 @@ C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\bin\Deb
 C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\bin\Debug\GamePatcher_Base.exe
 C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\bin\Debug\GamePatcher_Base.pdb
 C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\bin\Debug\GamePatcher_Base.xml
+C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\bin\Debug\Interop.IWshRuntimeLibrary.dll
+C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\obj\Debug\GamePatcher_Base.vbproj.ResolveComReference.cache
 C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\obj\Debug\GamePatcher_Base.CDKeyForm.resources
 C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\obj\Debug\GamePatcher_Base.GamePatcher_Main.resources
 C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\obj\Debug\GamePatcher_Base.GamePatcher_Splash.resources
@@ -16,4 +19,3 @@ C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\obj\Deb
 C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\obj\Debug\GamePatcher_Base.exe
 C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\obj\Debug\GamePatcher_Base.xml
 C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\obj\Debug\GamePatcher_Base.pdb
-C:\GitHub\ProjectPonyville_GamePatcher\GamePatcher_Base\GamePatcher_Base\obj\Debug\GamePatcher_Base.vbprojResolveAssemblyReference.cache

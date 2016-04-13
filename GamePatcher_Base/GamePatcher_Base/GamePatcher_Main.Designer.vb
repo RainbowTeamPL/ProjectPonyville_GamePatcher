@@ -32,6 +32,7 @@ Partial Class GamePatcher_Main
         Me.InstallBtn = New System.Windows.Forms.Button()
         Me.PlayBtn = New System.Windows.Forms.Button()
         Me.UpdateText = New System.Windows.Forms.Label()
+        Me.CreateDesktopShortcutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,7 +69,7 @@ Partial Class GamePatcher_Main
         '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertCDKeyMenu, Me.UninstallToolStripMenuItem})
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertCDKeyMenu, Me.UninstallToolStripMenuItem, Me.CreateDesktopShortcutToolStripMenuItem})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(48, 20)
         Me.ToolStripMenuItem1.Text = "Tools"
@@ -77,13 +78,13 @@ Partial Class GamePatcher_Main
         '
         Me.InsertCDKeyMenu.Enabled = False
         Me.InsertCDKeyMenu.Name = "InsertCDKeyMenu"
-        Me.InsertCDKeyMenu.Size = New System.Drawing.Size(155, 22)
+        Me.InsertCDKeyMenu.Size = New System.Drawing.Size(209, 22)
         Me.InsertCDKeyMenu.Text = "Insert CD-Key..."
         '
         'UninstallToolStripMenuItem
         '
         Me.UninstallToolStripMenuItem.Name = "UninstallToolStripMenuItem"
-        Me.UninstallToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.UninstallToolStripMenuItem.Size = New System.Drawing.Size(209, 22)
         Me.UninstallToolStripMenuItem.Text = "Uninstall..."
         '
         'VersionLabel
@@ -125,6 +126,12 @@ Partial Class GamePatcher_Main
         Me.UpdateText.Text = "Update Avaible"
         Me.UpdateText.Visible = False
         '
+        'CreateDesktopShortcutToolStripMenuItem
+        '
+        Me.CreateDesktopShortcutToolStripMenuItem.Name = "CreateDesktopShortcutToolStripMenuItem"
+        Me.CreateDesktopShortcutToolStripMenuItem.Size = New System.Drawing.Size(209, 22)
+        Me.CreateDesktopShortcutToolStripMenuItem.Text = "Create desktop shortcut..."
+        '
         'GamePatcher_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -162,4 +169,5 @@ Partial Class GamePatcher_Main
     Friend WithEvents PlayBtn As Button
     Friend WithEvents UninstallToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UpdateText As Label
+    Friend WithEvents CreateDesktopShortcutToolStripMenuItem As ToolStripMenuItem
 End Class
